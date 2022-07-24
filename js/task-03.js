@@ -16,7 +16,11 @@ const images = [
 const findElem = document.querySelector(".gallery");
 
 const string = images
-	.map(item => `<li class='imgTask3' style='list-style: none'><img width=200 src='${item.url}' alt='${item.alt}'></li>`)
+	.map(
+		item =>
+			`<li class='imgTask3' style='list-style: none'><img width=200 height=120 src='${item.url}' alt='${item.alt}'></li>`,
+	)
 	.join("");
 findElem.insertAdjacentHTML("afterbegin", string);
-// findElem.style.listStyle = "none";
+findElem.style.display = "flex";
+findElem.style.gap = "30px";
