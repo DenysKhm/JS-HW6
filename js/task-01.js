@@ -21,3 +21,11 @@ console.log(`Category: ${thirdItemUl.textContent}`);
 
 const thirdItemLi = thirdItem.lastElementChild.children;
 console.log(`Elements: ${thirdItemLi.length}`);
+
+// const categoriesElems = document.querySelectorAll("#categories > li");
+// console.log(`Number of categories: ${categoriesElems.length}`);
+
+// for (let elem of categoriesElems) {
+// 	console.log(`Category: ${elem.firstElementChild.textContent}`);
+// 	console.log(`Elements: ${elem.lastElementChild.childElementCount}`);
+// }
